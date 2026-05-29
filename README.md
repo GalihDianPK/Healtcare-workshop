@@ -24,6 +24,11 @@ Berikut adalah panduan koneksi kabel (*wiring*) antara WeMos D1 R2 dengan kompon
 
 > **Catatan:** Lepas jack DC power pada ESP8266 sebelum melakukan *upload* program untuk menghindari kerusakan perangkat.
 
+## 🔧 Troubleshooting
+- **Data tidak muncul di ThingSpeak?** Periksa kembali SSID dan Password WiFi di kode. Pastikan ESP8266 terhubung ke internet.
+- **Data di ThingSpeak tidak berubah?** Akun gratis ThingSpeak memiliki batasan update setiap 15 detik. Pastikan `delay()` pada kode tidak lebih cepat dari itu.
+- **LCD tidak menyala?** Putar potensiometer kecil di bagian belakang modul I2C LCD untuk mengatur kontras.
+
 ## 🚀 Cara Menjalankan
 1. **Persiapan:**
    - Pastikan Arduino IDE sudah terinstal.
